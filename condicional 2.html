@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html >
+
+<style>
+  body{ background-color: beige;  }
+
+.a{
+ margin-center: 300px;
+  margin-left:400px;
+  margin-right:400px;
+  padding:90PX;
+  
+ }
+
+
+
+  </style>
+
+  
+<head>
+   <meta charset="utf-8">
+   <title>Jquery condicionales"AP"</title>
+   <script type="text/javascript">
+
+ window.onload= funcion()
+{
+document.getElementById("boton").addEventListener("click", sumar);
+}
+function sumar(){
+var num1= document.getElementById("num1").value;
+var num2= document.getElementById("num2").value;
+var sumar = parseInt(num1)+parseInt(num2);
+alert("la suma es: "+sumar);
+}
+
+
+
+   /*   
+var aux= true
+var asignada= aux? " hola" : adios ";
+alert(asignada);
+*/
+
+
+
+    /*        
+
+var edad =18 
+if(edad >18)
+alert("eres mayor de 18 años");
+
+else if(edad <18)
+alert("eres menor  de edad ");
+
+else
+alert("tienes 18 años ");
+ 
+*/
+
+
+
+  /* 
+
+var a = "hola";
+switch(a)
+
+{
+case "hola ":
+alert("a=o");
+
+break;
+case "HOLA ":
+alert("a=1");
+
+break;
+default;
+
+alert("a=?");
+
+break;
+
+}
+
+*/
+
+
+
+           </script>
+    
+  </head>
+
+    <body class="a" >
+           <fieldset>
+<legend> CALCULAR </legend>
+numero1: <input type="text" id="num1"><br><br>
+numero2: <input type="text" id="num2"><br><br>
+<input type="button" style= id="boton" value="calcular" onclick="sumar()"> <br><br>
+
+
+</fieldset>
+     </body>
+</html> 
